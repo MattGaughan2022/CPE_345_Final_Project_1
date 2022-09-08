@@ -1,0 +1,59 @@
+file 442773 1621289730                                          
+version 2
+run General-0-20210517-18:15:22-2128
+attr configname General
+attr datetime 20210517-18:15:22
+attr experiment General
+attr inifile Final_Project1.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network1
+attr processid 2128
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 245
+param **.SourceA.interArrivalTime exponential(163.9s)
+param **.SourceB.interArrivalTime exponential(159.7s)
+param **.SourceC.interArrivalTime exponential(555.6s)
+param **.SourceA.startTime 0s
+param **.SourceA.stopTime 201599s
+param **.SourceB.startTime 201600s
+param **.SourceB.stopTime 604799s
+param **.SourceC.startTime 604800s
+param **.SourceC.stopTime 1353599s
+param **.server.serviceTime 1500s
+param **.SourceA.jobType 0
+param **.SourceB.jobType 1
+param **.SourceC.jobType 2
+
+vector 0 Network1.passiveQueue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 Network1.passiveQueue1 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 2 Network1.passiveQueue2 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 3 Network1.final_Project_1_SinkA lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+vector 4 Network1.final_Project_1_SinkB lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+vector 5 Network1.final_Project_1_SinkC lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+0	1702 62089 0 15133 0 1830000 2441 0 1086 1324466 959522688
+1	63791 136007 0 25205 0 5607000 5037 0 2518 6340324 10643291394
+2	199798 75709 0 30753 0 7687500 2775 0 1387 1923769 1778845531
+3	275507 38865 23 15140 1500 1831500 1221 1500 1629980.0030599 995206792.03201 1.0824799283975e+015
+4	314372 82792 15144 25212 1833000 5608500 2518 1631400 5004000.6782418 8356329291.062 3.0114826771695e+016
+5	397164 45607 25216 30759 5610000 7689000 1387 5005200 6336530.738324 7856180559.8352 4.47031448001e+016
+
